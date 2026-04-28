@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-ivory text-ink antialiased;
+  font-family: "Pretendard", "SUIT", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.markdown-output h1,
+.markdown-output h2,
+.markdown-output h3 {
+  @apply mt-6 font-semibold text-ink;
+}
+
+.markdown-output p,
+.markdown-output li {
+  @apply mt-2 leading-7 text-[15px] text-[#2f2d2a];
+}
+
+.markdown-output ul {
+  @apply list-disc pl-6;
+}
